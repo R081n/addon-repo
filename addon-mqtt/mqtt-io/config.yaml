@@ -1,0 +1,29 @@
+---
+name: MQTT IO
+version: dev
+slug: mqtt-io
+description: Expose GPIO modules and digital sensors via MQTT for remote control and monitoring.
+url: https://github.com/R081n/addon-mqtt-io
+arch:
+    - aarch64
+    - amd64
+    - armhf
+    - armv7
+    - i386
+init: false
+homeassistant_api: true
+uart: true
+gpio: true
+privileged:
+    - SYS_RAWIO
+devices:
+    - /dev/
+map:
+    - config:rw
+    - share:rw
+    - ssl
+options:
+    configuration_file: /config/mqtt-io/config.yml
+schema:
+    configuration_file: str
+    log_level: list(trace|debug|info|notice|warning|error|fatal)?
