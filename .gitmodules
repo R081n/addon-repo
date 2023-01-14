@@ -1,0 +1,3 @@
+[submodule "addon-mqtt-withi2c"]
+	path = addon-mqtt-withi2c
+	url = https://github.com/R081n/addon-mqtt-io.git
