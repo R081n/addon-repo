@@ -1,0 +1,3 @@
+[submodule "addon-mqtt"]
+	path = addon-mqtt
+	url = https://github.com/R081n/addon-mqtt-io.git
